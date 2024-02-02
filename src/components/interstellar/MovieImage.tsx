@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { cn } from '@/lib/utils'
+import Interstellar from '../../../public/interstellar.png'
 
 type props = {
   className?: string
@@ -17,10 +18,13 @@ export default function MovieImage({ className }: props) {
       target="_blank"
     >
       <Image
-        src="/interstellar.png"
+        src={Interstellar}
         alt="Interstellar"
-        width={672}
-        height={300}
+        sizes="100vw"
+        style={{
+          width: '100%',
+          height: 'auto',
+        }}
         className="py-10"
       />
     </Link>
