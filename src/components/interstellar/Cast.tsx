@@ -1,10 +1,17 @@
+import { cn } from '@/lib/utils'
+
 type props = {
   className?: string
 }
 
 export default function Cast({ className }: props) {
   return (
-    <div className="mt-14 flex justify-end gap-x-8 text-xs font-semibold tracking-tight">
+    <div
+      className={cn(
+        'mt-14 flex justify-end gap-x-8 text-xs font-semibold tracking-tight',
+        className
+      )}
+    >
       <div>
         <p>Matthew McConaughey</p>
         <p>Anne Hathaway</p>
