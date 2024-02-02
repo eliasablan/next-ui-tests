@@ -13,7 +13,7 @@ export default function Title({ className }: props) {
   return (
     <h1
       className={cn(
-        'mt-10 font-serif text-8xl font-extrabold tracking-tighter',
+        'mt-10 font-serif text-6xl font-extrabold tracking-tighter md:text-8xl',
         dmSans.className,
         className
       )}
