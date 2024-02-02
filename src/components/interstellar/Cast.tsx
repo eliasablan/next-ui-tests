@@ -12,17 +12,17 @@ export default function Cast({ className }: props) {
         className
       )}
     >
-      <div>
+      <div className="flex flex-col justify-between gap-y-4 md:gap-y-1">
         <p>Matthew McConaughey</p>
         <p>Anne Hathaway</p>
         <p>Jessica Chastain</p>
       </div>
-      <div>
+      <div className="flex flex-col justify-between gap-y-4 md:gap-y-1">
         <p>Mackenzie Foy</p>
         <p>Bill Irwin</p>
         <p>Michael Caine</p>
       </div>
-      <div>
+      <div className="flex flex-col justify-between gap-y-4 md:gap-y-1">
         <p>John Lithgow</p>
         <p>David Oyellowo</p>
         <p>Ellen Burstyn</p>
