@@ -7,8 +7,8 @@ import MovieImage from '@/components/interstellar/MovieImage'
 
 export default function Interstellar() {
   return (
-    <main className="relative min-h-svh bg-[#e7e6db] pt-10 text-[#1b1b1d]">
-      <div className="mx-auto max-w-3xl px-2 pb-10">
+    <main className="relative min-h-svh bg-[#e7e6db] p-6 text-[#1b1b1d]">
+      <div className="mx-auto max-w-3xl">
         {/* Header */}
         <motion.div
           initial={{ y: -100, opacity: 0 }}

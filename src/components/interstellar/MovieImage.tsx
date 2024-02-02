@@ -25,7 +25,7 @@ export default function MovieImage({ className }: props) {
           width: '100%',
           height: 'auto',
         }}
-        className="py-10"
+        className="pt-10"
       />
     </Link>
   )
