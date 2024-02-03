@@ -1,4 +1,6 @@
+'use client'
 import { cn } from '@/lib/utils'
+import { motion } from 'framer-motion'
 import { Roboto_Condensed } from 'next/font/google'
 
 const RobotoCondensed = Roboto_Condensed({
@@ -11,7 +13,9 @@ type props = {
 
 export default function Header({ className }: props) {
   return (
-    <header
+    <motion.header
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1, transition: { delay: 0.2 } }}
       className={cn(
         'flex items-center justify-between',
         RobotoCondensed.className,
@@ -29,6 +33,6 @@ export default function Header({ className }: props) {
       <p className="border-2 border-[#1b1b1d] p-2 text-lg font-bold leading-none">
         14
       </p>
-    </header>
+    </motion.header>
   )
 }

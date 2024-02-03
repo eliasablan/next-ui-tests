@@ -1,45 +1,22 @@
-'use client'
-import { motion } from 'framer-motion'
-import Cast from '@/components/interstellar/Cast'
+import type { Metadata } from 'next'
 import Header from '@/components/interstellar/Header'
 import Title from '@/components/interstellar/Title'
+import Cast from '@/components/interstellar/Cast'
 import MovieImage from '@/components/interstellar/MovieImage'
+
+export const metadata: Metadata = {
+  title: 'Interstellar | 2014',
+  description: '14th film by Christopher Nolan',
+}
 
 export default function Interstellar() {
   return (
     <main className="relative min-h-svh bg-[#e7e6db] p-6 text-[#1b1b1d]">
       <div className="mx-auto max-w-3xl">
-        {/* Header */}
-        <motion.div
-          initial={{ y: -100, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-        >
-          <Header />
-        </motion.div>
-
-        {/* Movie Name */}
-        <motion.div
-          initial={{ x: -100, opacity: 0 }}
-          animate={{ x: 0, opacity: 1, transition: { delay: 0.25 } }}
-        >
-          <Title />
-        </motion.div>
-
-        {/* Cast */}
-        <motion.div
-          initial={{ x: 100, opacity: 0 }}
-          animate={{ x: 0, opacity: 1, transition: { delay: 0.25 } }}
-        >
-          <Cast />
-        </motion.div>
-
-        {/* Image */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1, transition: { delay: 0.5 } }}
-        >
-          <MovieImage />
-        </motion.div>
+        <Header />
+        <Title />
+        <Cast />
+        <MovieImage />
       </div>
     </main>
   )
