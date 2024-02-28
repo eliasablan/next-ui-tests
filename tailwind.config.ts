@@ -1,5 +1,9 @@
 import type { Config } from 'tailwindcss'
 
+// background-beams
+// @ts-ignore
+import { default as flattenColorPalette } from 'tailwindcss/lib/util/flattenColorPalette'
+
 const config: Config = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -21,6 +25,22 @@ const config: Config = {
       lg: '1440px',
     },
   },
-  plugins: [],
+  plugins: [
+    // background-beams
+    addVariablesForColors,
+  ],
 }
+
+// background-beams
+function addVariablesForColors({ addBase, theme }: any) {
+  let allColors = flattenColorPalette(theme('colors'))
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  )
+
+  addBase({
+    ':root': newVars,
+  })
+}
+
 export default config
