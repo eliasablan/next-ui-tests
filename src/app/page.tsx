@@ -22,7 +22,9 @@ const pages = [
 
 export default function Home() {
   return (
-    <main className="relative mx-auto min-h-svh w-full max-w-2xl overflow-hidden bg-slate-900 p-4">
+    <main className="relative flex min-h-svh w-full flex-col items-center justify-center overflow-hidden bg-slate-900 p-4">
+      <div className="pointer-events-none absolute inset-0 z-20 h-full w-full bg-slate-900 [mask-image:radial-gradient(transparent,white)]" />
+
       <Boxes />
       <h1 className="relative z-20 text-4xl font-bold text-white">
         UI tests
