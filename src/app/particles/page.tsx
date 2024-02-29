@@ -17,7 +17,7 @@ export default function Interstellar() {
         background="transparent"
         minSize={0.4}
         maxSize={1}
-        particleDensity={1200}
+        particleDensity={600}
         className="absolute left-0 top-0 mx-auto h-full w-full"
         particleColor="#000"
       />
@@ -25,7 +25,7 @@ export default function Interstellar() {
         <Header />
         <Title />
         <Cast />
-        <MovieImage />
+        <MovieImage className="relative" />
       </div>
     </main>
   )
