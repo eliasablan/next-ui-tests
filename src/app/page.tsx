@@ -15,7 +15,7 @@ const pages = [
   },
   {
     title: 'Particles',
-    href: 'Particles',
+    href: 'particles',
   },
 ]
 
