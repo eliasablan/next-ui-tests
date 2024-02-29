@@ -18,7 +18,7 @@ export default function Title({ className }: props) {
       animate={{ x: 0, opacity: 1, transition: { duration: 0.5 } }}
       className={cn(
         'mt-10 font-serif font-extrabold tracking-tighter',
-        'xs:text-7xl text-5xl sm:text-8xl',
+        'text-5xl xs:text-7xl sm:text-8xl',
         dmSans.className,
         className
       )}
