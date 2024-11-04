@@ -14,20 +14,20 @@ export const metadata: Metadata = {
 
 export default function Interstellar() {
   return (
-    <main className="relative min-h-svh overflow-hidden bg-[#e7e6db] p-6 text-[#1b1b1d]">
+    <main className="relative min-h-svh overflow-hidden bg-[#151513] p-6 text-[#e7e6db]">
       <SparklesCore
         background="transparent"
         minSize={0.4}
         maxSize={1}
         particleDensity={600}
         className="absolute left-0 top-0 mx-auto h-full w-full"
-        particleColor="#000"
+        particleColor="#e7e6db"
       />
       <div className="mx-auto max-w-3xl">
-        <Header />
-        <Title />
-        <Cast />
-        <MovieImage className="relative" />
+        <Header className="text-[#e7e6db]" />
+        <Title className="text-[#e7e6db]" />
+        <Cast className="text-[#e7e6db]" />
+        <MovieImage className="relative text-[#e7e6db]" />
       </div>
     </main>
   )
