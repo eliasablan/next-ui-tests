@@ -19,7 +19,7 @@ export default function Interstellar() {
         background="transparent"
         minSize={0.4}
         maxSize={1}
-        particleDensity={600}
+        particleDensity={300}
         className="absolute left-0 top-0 mx-auto h-full w-full"
         particleColor="#e7e6db"
       />
