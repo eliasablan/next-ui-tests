@@ -1,20 +1,19 @@
 'use client'
+
 import Link from 'next/link'
 import Image from 'next/image'
+import Interstellar from '/public/interstellar.png'
+
 import { cn } from '@/lib/utils'
-import { motion } from 'framer-motion'
-import Interstellar from '../../../public/interstellar.png'
 
 type props = {
   className?: string
+  imageClassName?: string
 }
 
-export default function MovieImage({ className }: props) {
+export default function MovieImage({ className, imageClassName }: props) {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1, transition: { delay: 0.2 } }}
-    >
+    <div>
       <Link
         className={cn(
           'font-semibold text-blue-800 hover:underline',
@@ -31,9 +30,9 @@ export default function MovieImage({ className }: props) {
             width: '100%',
             height: 'auto',
           }}
-          className="pt-10"
+          className={cn('pt-10', imageClassName)}
         />
       </Link>
-    </motion.div>
+    </div>
   )
 }

@@ -1,9 +1,11 @@
 import type { Metadata } from 'next'
-import Header from '@/components/interstellar/Header'
-import Title from '@/components/interstellar/Title'
-import Cast from '@/components/interstellar/Cast'
-import MovieImage from '@/components/interstellar/MovieImage'
+
 import { SparklesCore } from '@/components/ui/sparkles'
+
+import Header from '../_components/Header'
+import Title from '../_components/Title'
+import Cast from '../_components/Cast'
+import MovieImage from '../_components/MovieImage'
 
 export const metadata: Metadata = {
   title: 'Interstellar | 2014',

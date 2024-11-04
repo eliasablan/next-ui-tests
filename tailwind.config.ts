@@ -43,6 +43,7 @@ const config: Config = {
     },
   },
   plugins: [
+    require('tailwindcss-motion'),
     // background-beams
     addVariablesForColors,
   ],

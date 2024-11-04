@@ -1,5 +1,6 @@
-import { Boxes } from '@/components/ui/background-boxes'
 import Link from 'next/link'
+
+import { Boxes } from '@/components/ui/background-boxes'
 
 type Pages = {
   title: string
